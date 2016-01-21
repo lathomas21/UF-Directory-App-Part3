@@ -35,8 +35,9 @@ var updatePhelpsMemorial = function() {
     log the updated document to the console. 
    */
 
-    // var phelps = db.listings.update({code: "PHL"}, $set: {address: "Phelps Lab, Gainesville, Fl. 32603"});
-    // console.log(phelps);
+    var phelps = Listing.update({code: "PHL"}, {$set: {address: "Phelps Lab, Gainesville, Fl. 32603"}}
+    );
+    console.log(phelps);
 };
 var retrieveAllListings = function() {
 
